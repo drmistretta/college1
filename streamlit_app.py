@@ -43,9 +43,9 @@ def main():
     bodyjson=json.loads(rspjson['body'])
     print(bodyjson)
     with col2:
-        st.title(f"Prediction: {bodyjson['predicted_label']}")
+        st.write(f"Prediction: {bodyjson['predicted_label']}")
         st.divider()
-        st.title("Confidence Score")
+        st.write("Confidence Score")
         st.dataframe(bodyjson['confidence_score'])
 
 main()
