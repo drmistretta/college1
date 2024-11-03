@@ -19,6 +19,9 @@ default_data={
              "H5OD2A":1
 }
 def get_prediction_college_no_region(data):
+  with st.sidebar.expander("AI input"):
+    st.dataframe(data)
+    st.write(json.dumps(data))
   url = 'https://askai.aiclub.world/dedd15bc-65eb-4c7a-9893-0d21d9f00cce'
   r = requests.post(url, data=json.dumps(data))
   response = getattr(r,'_content').decode("utf-8")
