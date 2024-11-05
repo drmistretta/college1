@@ -36,7 +36,7 @@ def get_prediction_college_no_region(data):
 
 def main():
     st.title("College without Region")
-            st.header("Toggle the SAAB Feature to create new male and female participants. Click on the number lines to change values.")
+    st.header("Toggle the SAAB Feature to create new male and female participants. Click on the number lines to change values.")
     col1,col2=st.columns(2)
     with col1:
         userdata=default_data
