@@ -43,7 +43,7 @@ def main():
         #
         #Sex Assigned at Birth
         userdata["H5OD2A"] = st.select_slider(
-        '''Pick the number 1 = male or 2 = female for Sex Assigned at Birth.
+        '''Pick the number 1 = male or 2 = female for Sex Assigned at Birth (SAAB).
         \nFeature H5OD2A''',
         options=list(range(1, 3)),  # Values from 1 to 2
         value=1) # Default = 1
